@@ -34,7 +34,7 @@ public class RandomResponseServlet extends HttpServlet {
             " La vie est belle!", 
         "The Paris Agreement on climate change was signed by the largest number of " +
             "countries ever in one day.",
-        "The world’s quietest room is located at Microsoft's headquarters in " + 
+        "The world's quietest room is located at Microsoft's headquarters in " + 
             "Washington state.",
         "Japan is the world's most earthquake-prone country.",
         "More than 52 percent of the world’s population is under 30 years old."
@@ -44,10 +44,10 @@ public class RandomResponseServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) 
     throws IOException {
         response.setContentType("text/html;");
-        response.getWriter().println("<h3>" + randString() + "</h3>");
+        response.getWriter().println(randString());
     }
 
-    /** Returns a random message from [] */
+    /** Returns a random message from [randMessages] */
     public String randString() {
         int i = (int) (Math.random() * randMessages.length);
         return randMessages[i];

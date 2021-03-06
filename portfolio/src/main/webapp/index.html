@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="random_fetch.js"></script>
     <!-- Center Image: Not working -->
     <style type="text/css">
-    .centerImage
-    {
-    text-align:center;
-    display:block;
-    }
+        .centerImage {
+            text-align: center;
+            display: block;
+        }
     </style>
     <!--
         *****when i find a good background :/*****
@@ -23,98 +24,98 @@
     }
     </style>
     -->
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="content">
-      <h1>Samuel Rodriguez's Portfolio!</h1>
-      <p>Welcome! This is my portfolio. I do not have much right now, 
-          but come back later for more :)</p>
-      <img src="images/Professional.jpg" alt="My portrait" style="width:240px;"/>
-      <p style="text-indent: 5%;">See my Github for all of my recent projects
-        <a href = "https://github.com/SamRod33">SamRod33</a> In particular,
-        <a href = "https://github.com/SamRod33/HyperharmonicCentrality">
-        HyperharmonicCentrality</a> is my personal favorite. You should
-        also check out my LinkedIn 
-        <a href = https://www.linkedin.com/in/samuel-rodriguez-1352571a8/">here</a>!</p>
-      <div id="projects">
-          <!-- Insert small video demos of projects??? -->
-          <h5><b>Here are some of my most recent projects:</b></h5>
-          <ul>
-              <li>McDiver Sewer Escape</li>
-              <!-- Video demo of game -->
-              <li>Tic Tac Toe Game</li>
-              <!-- Video demonstration -->
-              <li>Hyperharmonic Centrality</li>
-              <!-- Lookup how to convert PDF to image type or how to open pdfs in HTML -->
-          </ul>
-      </div>
-      <div id="recent-activities">
-          <h2>Recent Activities</h2>
-          <!--recently watched, currently watching, will watch -->
-          <!-- I want to figure out how to put these side by side-->
-        <h4>Shows</h4>
-        <img src="images/demon-slayer.jfif" alt="Demon Slayer" 
-            style="width:256px;"/>
-        <figcaption>Fig.1 - Recently watched (Highly Recommend!)</figcaption>
-        <img src="images/cursed-poster.jpg" alt="Cursed" 
-            style="width:256px;"/>
-        <figcaption>Fig.2 - Currently watching</figcaption>
-        <img src="images/Attack-On-Titan.jpg" alt="Attack on Titan" 
-            style="width:256px;"/>
-         <figcaption>Fig.3 - Will watch at some point :)</figcaption>
-          <!-- previous video game, current video game, next game I will play-->
-        <h4>Video Games</h4>
-            <img src="images/BOTW.jpg" alt="Breath of the Wild" 
-            style="width:256px;"/>
-        <figcaption>Fig.5 - Recently played: Legend of Zelda - Breath of the Wild 
-        </figcaption>
-        <img src="images/Minecraft.png" alt="minecraft" 
-            style="width:256px;"/>
-        <figcaption>Fig.6 - Currently playing: Minecraft (my base)</figcaption>
-        <img src="images/xenoblade-chronicles-2.jpg" alt="Xenoblade" 
-            style="width:256px;"/>
-         <figcaption>Fig.7 - Will play: Xenoblade Chronicles 2</figcaption>
-      </div>
-      <div id="greeting-container">
-          <h2>A Little Bit About Me</h2>
-          <p style="text-indent: 5%;">My name is Sam and I am a person who 
-            enjoys the world of Computer science. I like to design applications 
-            to make life more convenient and easier. I want to make the world 
-            better through innovative ideas and clever solutions.
-          </p>
-          <p style="text-indent: 5%;">Right now I am a sophomore studying 
-            Computer Science with a focus in Machine Learning at Cornell 
-            University. Go Big Red!
-          </p>
-          <img src="images/cornell-campus.jpg" alt="Cornell Campus"/>
+        <h1>Samuel Rodriguez's Portfolio!</h1>
+        <p>Welcome! This is my portfolio. I do not have much right now,
+            but come back later for more :)</p>
+        <img src="images/Professional.jpg" alt="My portrait" style="width:240px;" />
+        <p style="text-indent: 5%;">See my Github for all of my recent projects
+            <a href="https://github.com/SamRod33">SamRod33</a> In particular,
+            <a href="https://github.com/SamRod33/HyperharmonicCentrality">
+                HyperharmonicCentrality</a> is my personal favorite. You should
+            also check out my LinkedIn
+            <a href=https://www.linkedin.com/in/samuel-rodriguez-1352571a8/">here</a>!</p>
+        <div id="projects">
+            <!-- Insert small video demos of projects??? -->
+            <h5><b>Here are some of my most recent projects:</b></h5>
+            <ul>
+                <li>McDiver Sewer Escape</li>
+                <!-- Video demo of game -->
+                <li>Tic Tac Toe Game</li>
+                <!-- Video demonstration -->
+                <li>Hyperharmonic Centrality</li>
+                <!-- Lookup how to convert PDF to image type or how to open pdfs in HTML -->
+            </ul>
+        </div>
+        <div id="recent-activities">
+            <h2>Recent Activities</h2>
+            <!--recently watched, currently watching, will watch -->
+            <!-- I want to figure out how to put these side by side-->
+            <h4>Shows</h4>
+            <img src="images/demon-slayer.jfif" alt="Demon Slayer" style="width:256px;" />
+            <figcaption>Fig.1 - Recently watched (Highly Recommend!)</figcaption>
+            <img src="images/cursed-poster.jpg" alt="Cursed" style="width:256px;" />
+            <figcaption>Fig.2 - Currently watching</figcaption>
+            <img src="images/Attack-On-Titan.jpg" alt="Attack on Titan" style="width:256px;" />
+            <figcaption>Fig.3 - Will watch at some point :)</figcaption>
+            <!-- previous video game, current video game, next game I will play-->
+            <h4>Video Games</h4>
+            <img src="images/BOTW.jpg" alt="Breath of the Wild" style="width:256px;" />
+            <figcaption>Fig.5 - Recently played: Legend of Zelda - Breath of the Wild
+            </figcaption>
+            <img src="images/Minecraft.png" alt="minecraft" style="width:256px;" />
+            <figcaption>Fig.6 - Currently playing: Minecraft (my base)</figcaption>
+            <img src="images/xenoblade-chronicles-2.jpg" alt="Xenoblade" style="width:256px;" />
+            <figcaption>Fig.7 - Will play: Xenoblade Chronicles 2</figcaption>
+        </div>
+        <div id="greeting-container">
+            <h2>A Little Bit About Me</h2>
+            <p style="text-indent: 5%;">My name is Sam and I am a person who
+                enjoys the world of Computer science. I like to design applications
+                to make life more convenient and easier. I want to make the world
+                better through innovative ideas and clever solutions.
+            </p>
+            <p style="text-indent: 5%;">Right now I am a sophomore studying
+                Computer Science with a focus in Machine Learning at Cornell
+                University. Go Big Red!
+            </p>
+            <img src="images/cornell-campus.jpg" alt="Cornell Campus" />
 
-          <!-- It would be cool to make a button that generates random facts
+            <!-- It would be cool to make a button that generates random facts
                 (the things below)-->
-        <h3><a  href="/rand_response">Click Here</a> to get a random message</h3>
+            <p>Click this button to see the server's random fact.</p>
+            <button onclick="showRandText();">
+                Get Random Message
+            </button>
+            <p id="text-container"></p>
+            <p>Click <a href="/rand_response">here</a> to see a random fact.</p>
 
-          <!-- Where I am from -->
-          <p>I am from 
-              <a href="https://www.google.com/maps/place/Tampa,+FL/@27.9941986,
+            <!-- Where I am from -->
+            <p>I am from
+                <a href="https://www.google.com/maps/place/Tampa,+FL/@27.9941986,
               -82.7344711,10z/data=!3m1!4b1!4m5!3m4!1s0x88c2b782b3b9d1e1:
               0xa75f1389af96b463!8m2!3d27.950575!4d-82.4571776">Tampa, FL</a></p>
 
-          <!-- Add about hobbies (code, anime, minecraft)-->
-          <p><b>My hobbies</b> include solving interesting programming puzzles
+            <!-- Add about hobbies (code, anime, minecraft)-->
+            <p><b>My hobbies</b> include solving interesting programming puzzles
                 watching anime and Netflix shows</p>
 
-          <!-- Add picture of dogs -->
-          <p>Just a cute picture of my dogs. They are chiweenies (mix of chihuhua and 
-          dachshund)</p>
-          <img src="images/IMG_2157.JPG" alt="Leah (left) Abby (right)" 
-          style="height:360px"/>
+            <!-- Add picture of dogs -->
+            <p>Just a cute picture of my dogs. They are chiweenies (mix of chihuhua and
+                dachshund)</p>
+            <img src="images/IMG_2157.JPG" alt="Leah (left) Abby (right)" style="height:360px" />
 
-          <!-- Show off DNA ancestry-> Something Interesting about me-->
+            <!-- Show off DNA ancestry-> Something Interesting about me-->
 
-          <!-- Cool photography, I am relatively new to Fall and Winter seasons!-->
+            <!-- Cool photography, I am relatively new to Fall and Winter seasons!-->
 
-          <!-- Maybe fun facts? -->
-      </div>
-      <p><i>Updated as of 2/27/2021</i> </p>
+            <!-- Maybe fun facts? -->
+        </div>
+        <p><i>Updated as of 03/06/2021</i> </p>
     </div>
-  </body>
+</body>
+
 </html>
