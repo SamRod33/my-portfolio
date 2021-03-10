@@ -13,10 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/rand_response")
 public class RandomResponseServlet extends HttpServlet {
 
-    /** Random set of messages gathered from google and 
+    /** Random set of facts gathered from google and 
      * https://bestlifeonline.com/world-facts/. */
-    private String[] randMessages = 
-    {   "Java is completely different than Javascript",
+    private String[] randFacts = {   "Java is completely different than Javascript",
         "The stone (abbreviation st) is a unit of measure equal to 14 pounds " +
             "avoirdupois (about 6.35 kg [nb 1]) used in Great Britain and Ireland" + 
             "for measuring human body weight. In many Northwestern European " +
@@ -44,12 +43,12 @@ public class RandomResponseServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) 
     throws IOException {
         response.setContentType("text/html;");
-        response.getWriter().println("<h3>" + randString() + "</h3>");
+        response.getWriter().println("<h3>" + randFact() + "</h3>");
     }
 
-    /** Returns a random message from [] */
-    public String randString() {
-        int i = (int) (Math.random() * randMessages.length);
-        return randMessages[i];
+    /** Returns a random message from [randFacts] */
+    public String randFact() {
+        int i = (int) (Math.random() * randFacts.length);
+        return randFacts[i];
     }
 }
