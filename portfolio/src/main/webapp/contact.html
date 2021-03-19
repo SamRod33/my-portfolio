@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- This is the contact page where clients can send a contact 
+    request to my email. -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <div id="content">
+        <form action="/contact-form-handler" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="text-input">Message</label><br>
+            <textarea id="text-input" name="text-input" 
+                placeholder="Your message here..."></textarea>
+            <br />
+            <input type="submit" />
+        </form>
+        <p><i>Updated as of 3/19/2021</i> </p>
+    </div>
+</body>
+
+</html>
